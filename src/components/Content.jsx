@@ -7,7 +7,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: 'transparent',
     [theme.breakpoints.up('sm')]: {
       width: '599px',
-      marginLeft: theme.spacing(22),
+      marginLeft: theme.spacing(21),
       marginTop: theme.spacing(32),
     },
   },

@@ -6,7 +6,7 @@ import React from 'react'
 const useStyles = makeStyles((theme) => ({
   root: {
     width: '100%',
-    padding: theme.spacing(12, 21),
+    padding: theme.spacing(12, 20),
     backgroundImage: 'url(' + BgImage + ')',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'right 105px bottom 80px',
