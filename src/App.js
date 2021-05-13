@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
     width: '100%',
     height: '1000px',
     backgroundImage: 'url(' + path + ')',
-    backgroundSize: '880px 999px',
+    backgroundSize: '50% 999px',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'top right',
   },
