@@ -6,51 +6,84 @@ import React from 'react'
 const useStyles = makeStyles((theme) => ({
   root: {
     width: '100%',
-    padding: theme.spacing(12, 20),
     backgroundImage: 'url(' + BgImage + ')',
     backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'right 105px bottom 80px',
-    backgroundSize: '440px 465px',
+    height: '990px',
+    padding: theme.spacing(12, 1),
+    backgroundPosition: 'right 0 bottom 80px',
+    backgroundSize: '100% auto',
+    [theme.breakpoints.up('sm')]: {
+      height: 'auto',
+      backgroundSize: '48% 465px',
+    },
+    [theme.breakpoints.up('md')]: {
+      padding: theme.spacing(12, 10),
+      backgroundPosition: 'right 80px bottom 80px',
+      backgroundSize: '440px 500px',
+    },
   },
   contentBody: {
     border: '0',
     backgroundColor: 'transparent',
+    width: '90%',
+    margin: '16px auto',
     [theme.breakpoints.up('sm')]: {
-      width: '550px',
+      width: '50%',
+      marginLeft: theme.spacing(4),
+    },
+    [theme.breakpoints.up('md')]: {
+      width: '500px',
     },
   },
+
   title: {
-    fontSize: '36px',
-    lineHeight: '48px',
+    fontSize: '32px',
+    lineHeight: '42px',
+    [theme.breakpoints.up('sm')]: {
+      fontSize: '36px',
+      lineHeight: '48px',
+    },
     fontWeight: '700',
     fontStyle: 'normal',
     color: '#091133',
   },
+
   bodyContent: {
+    [theme.breakpoints.up('sm')]: {
+      lineHeight: '26px',
+    },
     marginTop: '16px',
     color: '#6F7CB2',
-    fontSize: '16px',
     fontWeight: '400',
-    lineHeight: '26px',
     fontStyle: 'normal',
+    [theme.breakpoints.up('md')]: {
+      fontSize: '14px',
+    },
   },
+
   cardGroup_wrapper: {
     marginTop: '80px',
     display: 'flex',
     flexDirection: 'row',
   },
+
   avatar: {
     fontSize: '24px',
     backgroundColor: 'transparent',
     color: '#000',
   },
+
   cardGroup: {
     border: '0',
     backgroundColor: 'transparent',
     [theme.breakpoints.up('sm')]: {
-      width: '255px',
+      width: '205px',
+    },
+    [theme.breakpoints.up('md')]: {
+      width: '34%',
     },
   },
+
   cardGroup_title: {
     marginBottom: '6px',
     marginTop: '14px',
@@ -59,6 +92,7 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: '500',
     lineHeight: '26px',
   },
+
   cardGroup_body: {
     color: '#5D6970',
     fontSize: '12px',
@@ -81,7 +115,7 @@ function Footer() {
         </Typography>
         <Typography
           className={classes.bodyContent}
-          style={{ marginTop: '12px' }}
+          style={{ marginTop: '12px', fontSize: '14px' }}
           variant='body1'
         >
           mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis,

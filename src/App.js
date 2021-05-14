@@ -10,17 +10,32 @@ const useStyles = makeStyles((theme) => ({
     width: '100%',
     height: '1000px',
     backgroundImage: 'url(' + path + ')',
-    backgroundSize: '880px 999px',
     backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover',
     backgroundPosition: 'top right',
+    [theme.breakpoints.up('sm')]: {
+      backgroundSize: '70% 899px',
+    },
+    [theme.breakpoints.up('md')]: {
+      backgroundSize: '65% 999px',
+      backgroundPosition: 'top right',
+    },
   },
   header: {
     width: '100%',
     height: '1000px',
     backgroundImage: 'url(' + group + ')',
-    backgroundSize: '540px 650px',
     backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'right 0 bottom 100px',
+    backgroundSize: '80% auto',
+    backgroundPosition: 'right 0 bottom 60px',
+    [theme.breakpoints.up('sm')]: {
+      backgroundSize: '50% auto',
+      backgroundPosition: 'right 0 bottom 170px',
+    },
+    [theme.breakpoints.up('md')]: {
+      backgroundSize: '42% auto',
+      backgroundPosition: 'right 0 bottom 100px',
+    },
   },
 }))
 function App() {
