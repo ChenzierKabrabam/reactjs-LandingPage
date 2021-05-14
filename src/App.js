@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
     height: '1000px',
     backgroundImage: 'url(' + group + ')',
     backgroundRepeat: 'no-repeat',
-    backgroundSize: '80% auto',
+    backgroundSize: '75% auto',
     backgroundPosition: 'right 0 bottom 60px',
     [theme.breakpoints.up('sm')]: {
       backgroundSize: '50% auto',
@@ -43,10 +43,10 @@ function App() {
   return (
     <>
       <div className={classes.root}>
-        <header className={classes.header}>
+        <div className={classes.header}>
           <Header />
           <Content />
-        </header>
+        </div>
       </div>
       <Footer />
       <CssBaseline />
