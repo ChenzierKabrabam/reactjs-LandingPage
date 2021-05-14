@@ -6,13 +6,13 @@ const useStyles = makeStyles((theme) => ({
     width: '90%',
     margin: '16px auto',
     marginTop: theme.spacing(8),
+    border: '0',
+    backgroundColor: 'transparent',
     [theme.breakpoints.up('sm')]: {
       width: '50%',
       marginTop: theme.spacing(20),
       marginLeft: theme.spacing(5),
     },
-    border: '0',
-    backgroundColor: 'transparent',
     [theme.breakpoints.up('md')]: {
       width: '599px',
       marginLeft: theme.spacing(13),
@@ -87,11 +87,7 @@ function Content() {
   const classes = useStyles()
   return (
     <Card className={classes.root} variant='outlined'>
-      <Typography
-        className={classes.title}
-        style={{ color: '#091133' }}
-        variant='h4'
-      >
+      <Typography className={classes.title} variant='h4'>
         introduce your product quickly & effectively
       </Typography>
       <Typography className={classes.bodyText} variant='body1' align='left'>
